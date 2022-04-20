@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, avoid_print
 
 import 'package:flutter/material.dart';
 
@@ -15,15 +15,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {},
-           icon: const Icon(
-             Icons.mail,
-           ),
-            label: const Text('mail me'),
-            style: ElevatedButton.styleFrom( primary: Colors.purple),   
-        ),
+      body: Container(
+        padding: const EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+        margin: const EdgeInsets.all(30.0),
+        color: Colors.grey[400],
+        child:const Text('hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
